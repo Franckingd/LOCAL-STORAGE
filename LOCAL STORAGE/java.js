@@ -1,43 +1,26 @@
-    var disciplina
-    var professor
+    var time
+    var jogador
 
 function cadastrar() {
-    disciplina = document.getElementById('disciplina').value
-    professor = document.getElementById('professor').value
+    time = document.getElementById('time').value
+    jogador = document.getElementById('jogador').value
 
-    localStorage.setItem(disciplina, professor)
-    // dessa forma oq vem em primeiro (disciplina) não pode ter repetição pois ele é considerada a chava do localStorage, já o segundo valor (professor) pode ter repetição
+    localStorage.setItem(time, jogador)
+    // dessa forma oq vem em primeiro (time) não pode ter repetição pois ele é considerada a chava do localStorage, já o segundo valor (professor) pode ter repetição
 
-    alert(localStorage.getItem (disciplina))
+    alert(localStorage.getItem (time))
 }
 
 function pesquisar() {
     pesquisa = document.getElementById('pesquisar').value
+    var msg = document.getElementById('msg')
+    var text = "<br>O jogador " + localStorage.getItem(pesquisa) + " é do time " + pesquisa 
+    
 
-    alert ("A chave pesquisada é: " + pesquisa + " " + localStorage.getItem(pesquisa))
-
+    // alert ("A chave pesquisada é: " + pesquisa + " " + localStorage.getItem(pesquisa))
+    // document.getElementById('msg').innerHTML += "O jogador " + localStorage.getItem(pesquisa) + " é do time " + pesquisa 
+    msg.innerHTML += text
     
 }
 
-// var time
-// var jogador
-// var msg = document.getElementById('msg')
-
-// function cadastrar() {
-// time = document.getElementById('time').value
-// jogador = document.getElementById('jogador').value
-
-// localStorage.setItem(time, jogador)
-// // dessa forma oq vem em primeiro (disciplina) não pode ter repetição pois ele é considerada a chava do localStorage, já o segundo valor (professor) pode ter repetição
-
-// alert(localStorage.getItem (time))
-// }
-
-// function pesquisar() {
-// pesquisa = document.getElementById('pesquisar').value
-
-// msg.innerHTML ("A chave pesquisada é: " + pesquisa + " " + localStorage.getItem(pesquisa))
-
-
-// }
 

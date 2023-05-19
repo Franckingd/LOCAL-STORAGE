@@ -6,17 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LOCAL STORAGE</title>
     <script src="java.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
-    <input type="text" name="disciplina" id="disciplina" placeholder="insira o nome da disciplina aqui"> <br>
-    <input type="text" name="professor" id="professor" placeholder="insira o nome do professor aqui"> <br>
-    <input type="button" value="CADASTRAR" name="btnCadastrar" id="btnCadastro" onclick="cadastrar()"> <br>
+    <div class="card">
+        <h1 style="color: aliceblue;">LOCAL-STORAGE</h1><br><br>
+        <input class="inputs" type="text" name="time" id="time" placeholder="insira o nome do time"> <br>
+        <input class="inputs" type="text" name="jogador" id="jogador" placeholder="insira o nome do jogador"> <br>
+        <input class="btn" type="button" value="CADASTRAR" name="btnCadastrar" id="btnCadastro" onclick="cadastrar()"> <br>
 
-    <br>
+        <br>
 
-    <input type="text" name="pesquisarchave" id="pesquisar" placeholder="insira o valor a ser pesquisado"> <br>
-    <input type="button" name="search" id="search" value="PESQUISAR" onclick="pesquisar()">
+        <input class="inputs" type="text" name="pesquisarchave" id="pesquisar" placeholder="Pesquisa por time"> <br>
+        <input class="btn" type="button" name="search" id="search" value="PESQUISAR" onclick="pesquisar()">
+
+        <br>
+        <h1 id="msg" style="color: aliceblue;"></h1> 
+        <br>
+    </div>
 </body>
 </html>
 
